@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    http://localhost:63342/pz/main/index.html?_ijt=m9dll6bg62b6774usd3gm1ttcv
+    <title>Nurse Scheduling | Team6</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/schedule.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+
+            $('.view-select').on('change', function() {
+                if(this.value == "classic"){
+                    $("#tab-sched-2").hide();
+                    $("#tab-cont-div").hide();
+
+                    $("#tab-sched-1").fadeIn();
+
+                }
+                if(this.value == "nurse"){
+                    $("#tab-sched-1").hide();
+
+                    $("#tab-sched-2").fadeIn();
+                    $("#tab-cont-div").fadeIn();
+                }
+            })
+        })
+
+    </script>
+
+
+
+</head>
+<body>
+
+<div id="header-sched">
+    <h1>Nurse Scheduling</h1>
+    <select class="selectpicker week-select">
+        <option>Week 1</option>
+        <option>Week 2</option>
+        <option>Week 3</option>
+        <option>Week 4</option>
+        <option>Week 5</option>
+    </select>
+
+    <select class="selectpicker view-select">
+        <option value="classic">Classic View</option>
+        <option value="nurse">Nurse View</option>
+    </select>
+
+
+</div>
+
+<table id="tab-sched-1">
+    <tr>
+        <th>Shift</th>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday </th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td>Day</td>
+        <td>08:00 - 17:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>08:00 - 17:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>08:00 - 17:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>Early</td>
+        <td>07:00 - 16:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>07:00 - 16:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>07:00 - 16:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>Late</td>
+        <td>14:00 - 23:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>14:00 - 23:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>14:00 - 23:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+    <tr>
+        <td>Night</td>
+        <td>23:00 - 07:00</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+        <td>NAME SURNAME</td>
+    </tr>
+
+</table>
+
+<div id="tab-cont-div">
+    <table id="tab-sched-2">
+        <tr>
+            <th>Nurse</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday </th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>NAME SURNAME1</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME2</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME3</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME4</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME5</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME6</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME7</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME8</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME9</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME10</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME11</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME12</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME13</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME14</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME15</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME16</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME17</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME18</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME19</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME20</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME21</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME22</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME23</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME24</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME25</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME26</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME27</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME28</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME29</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td>NAME SURNAME30</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+            <td>07:00 - 14:00</td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+
+
+
+</body>
+</html>
